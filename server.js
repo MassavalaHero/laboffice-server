@@ -53,6 +53,6 @@ const image = require('./routes/imageRoutes');
 app.use('/api/myapp', auth);
 
 app.use('/api/myapp', image);
-server.listen(4000, () => {
+server.listen(process.env.PORT || 4000, () => {
   console.log('LaboOffice');
 });
